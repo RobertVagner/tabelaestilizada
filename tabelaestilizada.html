@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabela Estilizada</title>
+        <style type="text/css">
+            body{
+                font-family: Arial, Verdana, sans-serif;
+                color: #111111;
+            }
+            table{
+                width: 600px;
+            }
+            th, td{
+                padding: 7px 10px 10px 10px;
+            }
+            th{
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size: 90%;
+                border-bottom: 2px solid #111111;
+                border-top: 1px solid #999;
+                text-align: left;
+            }
+            tr.even{
+                background-color: #dacccc;
+            }
+            tr:hover{
+                background-color: #c3e6e5;
+            }
+            .money{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Livros - Ciência da Computação</h1>
+        <table>
+            <tr>
+                <th>Autor</th>
+                <th>Título</th>
+                <th class="money">Preço para sócios</th>
+                <th class="money">Preço para não sócios</th>
+            </tr>
+            <tr>
+                <td>Andrew Tanembaum</td>
+                <td>Sistemas Operacionais</td>
+                <td class="money">R$350,00</td>
+                <td class="money">R$450,00</td>
+            </tr>
+            <tr class="even">
+                <td>Jon Ducket</td>
+                <td>HTML - Projete e construa Web Sites</td>
+                <td class="money">R$250,00</td>
+                <td class="money">R$350,00</td>
+            </tr>
+            <tr>
+                <td>Ivan Nunes da Silva</td>
+                <td>Redes Neurais Artificiais</td>
+                <td class="money">R$230,00</td>
+                <td class="money">R$260,00</td>
+            </tr>
+            <tr class="even">
+                <td>Adam Freeman</td>
+                <td>ASP.Net Core MVC</td>
+                <td class="money">R$450,00</td>
+                <td class="money">R$490,00</td>
+            </tr>
+        </table>
+    </body>
+</html>
